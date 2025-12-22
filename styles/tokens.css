@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Tomorrow Night";
+  src: url("../assets/fonts/Tomorrow_Night.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tomorrow Night Mono";
+  src: url("../assets/fonts/Tomorrow_Night_Monospaced.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --font-display: "Tomorrow Night", "Pixelify Sans", "VT323", "Courier New", monospace;
+  --font-body: "Tomorrow Night", "Quicksand", "Nunito", "Verdana", sans-serif;
+  --bg-sky: #cfd3a2;
+  --bg-glow: #e7d7b0;
+  --bg-pixel: #ebe6c7;
+  --ink-strong: #2f3b2a;
+  --ink-muted: #5b6a4f;
+  --accent-rose: #d58f7b;
+  --accent-mint: #7a9c6f;
+  --accent-olive: #3f5a3d;
+  --accent-sun: #e6b15c;
+  --accent-ink: #2e402c;
+  --card: #fff6e6;
+  --card-strong: #fff0d8;
+  --border: #d3c5a5;
+  --shadow: 0 14px 0 rgba(63, 90, 61, 0.12), 0 18px 28px rgba(50, 57, 38, 0.18);
+  --radius-lg: 22px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --max-width: 1120px;
+}

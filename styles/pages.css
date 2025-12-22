@@ -1,0 +1,277 @@
+.page {
+  display: grid;
+  gap: 28px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  letter-spacing: 0.5px;
+}
+
+.page-subtitle {
+  color: var(--ink-muted);
+  margin-top: var(--space-2);
+}
+
+.today-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.day-card {
+  display: grid;
+  gap: 16px;
+  text-align: center;
+}
+
+.day-weekday {
+  font-family: var(--font-display);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-muted);
+}
+
+.day-date-circle {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: var(--accent-olive);
+  color: #fff6e6;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 30px;
+  box-shadow: 0 8px 0 rgba(63, 90, 61, 0.25);
+}
+
+.day-month {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-muted);
+}
+
+.progress-card {
+  display: grid;
+  gap: 10px;
+}
+
+.progress-label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-muted);
+}
+
+.progress-track {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(63, 90, 61, 0.15);
+  border: 2px solid var(--border);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-mint), var(--accent-olive));
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.progress-meta {
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.task-card {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, rgba(255, 246, 230, 0.95), rgba(255, 240, 216, 0.95));
+  border-left: 6px solid var(--accent-mint);
+}
+
+.task-card-header .page-title {
+  font-size: 28px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--border);
+  padding: 24px;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.hero-illustration {
+  background: linear-gradient(160deg, rgba(213, 200, 141, 0.4), rgba(174, 187, 129, 0.5));
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.home-card {
+  display: grid;
+  gap: 18px;
+  background: linear-gradient(180deg, rgba(255, 246, 230, 0.96), rgba(251, 244, 229, 0.96));
+  border-left: 6px solid var(--accent-olive);
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.home-left {
+  display: grid;
+  gap: 16px;
+}
+
+
+.home-illustration {
+  display: grid;
+  place-items: center;
+  justify-items: end;
+  margin-left: auto;
+  transform: translateX(12px);
+}
+
+.home-illustration img {
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  object-fit: contain;
+}
+
+.hero-illustration .pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-2);
+}
+
+.pixel {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.pixel:nth-child(3n) {
+  background: #f4e2bf;
+}
+
+.pixel:nth-child(4n) {
+  background: #dfe0b8;
+}
+
+.pixel:nth-child(5n) {
+  background: #e6c9a7;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+
+.summary-grid.summary-list {
+  grid-template-columns: 1fr;
+}
+
+.mood-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mood-inline .icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+.task-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 28px;
+}
+
+.notes {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.note-input {
+  margin-top: 12px;
+}
+
+.calendar-toolbar {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.details-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.finish-day {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .today-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+}
