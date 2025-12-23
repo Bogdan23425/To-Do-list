@@ -2,9 +2,9 @@ export function renderHeader(currentPath) {
   const link = (href, label, iconClass) => {
     const active = currentPath === href ? "active" : "";
     return `
-      <a class="nav-link ${active}" href="#${href}">
+      <a class="nav-link ${active}" href="#${href}" aria-label="${label}">
         <span class="icon ${iconClass}" aria-hidden="true"></span>
-        ${label}
+        <span class="nav-text">${label}</span>
       </a>
     `;
   };

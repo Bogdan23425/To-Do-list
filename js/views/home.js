@@ -33,8 +33,8 @@ export function renderHome({ state }) {
         <div class="home-card card">
           <div class="home-left">
             <div class="page-title">Тихий дневник задач</div>
-            <div class="page-subtitle">Дней подряд: ${streakCount}</div>
-            <p class="page-subtitle">${escapeHtml(formatLongDate(todayKey))}</p>
+            <div class="page-subtitle home-streak">Дней подряд: ${streakCount}</div>
+            <p class="page-subtitle home-date">${escapeHtml(formatLongDate(todayKey))}</p>
             <div class="summary-grid summary-list">
               <div class="card-soft">
                 <strong>${tasks.length}</strong> Задач на сегодня

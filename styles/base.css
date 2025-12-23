@@ -61,3 +61,63 @@ button {
     padding: 24px;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .app {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .app {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 13px;
+  }
+
+  .app {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 280px) {
+  body {
+    font-size: 12px;
+  }
+
+  .app {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 220px) {
+  body {
+    font-size: 11px;
+  }
+
+  .app {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 200px) {
+  body {
+    font-size: 10.5px;
+  }
+
+  .app {
+    padding: 4px;
+  }
+}

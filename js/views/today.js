@@ -22,20 +22,22 @@ export function renderToday({ state, navigate, rerender }) {
   const html = `
     <section class="page">
       <div class="today-grid">
-        <div class="card day-card">
-          <div class="day-weekday">${escapeHtml(formatWeekday(todayKey))}</div>
-          <div class="day-date-circle">${todayKey.split("-")[2]}</div>
-          <div class="day-month">${escapeHtml(formatMonthName(todayKey))}</div>
-        </div>
-
-        <div class="card progress-card">
-          <div class="progress-label">Прогресс</div>
-          <div class="progress-track">
-            <div class="progress-bar" style="width:${progressValue}%"></div>
+        <div class="today-meta">
+          <div class="card day-card">
+            <div class="day-weekday">${escapeHtml(formatWeekday(todayKey))}</div>
+            <div class="day-date-circle">${todayKey.split("-")[2]}</div>
+            <div class="day-month">${escapeHtml(formatMonthName(todayKey))}</div>
           </div>
-          <div class="progress-meta">${completedCount} из ${tasks.length} задач</div>
-          <div class="task-actions" style="margin-top:12px;">
-            <a class="button secondary" href="#/home">На главную</a>
+
+          <div class="card progress-card">
+            <div class="progress-label">Прогресс</div>
+            <div class="progress-track">
+              <div class="progress-bar" style="width:${progressValue}%"></div>
+            </div>
+            <div class="progress-meta">${completedCount} из ${tasks.length} задач</div>
+            <div class="task-actions" style="margin-top:12px;">
+              <a class="button secondary" href="#/home">На главную</a>
+            </div>
           </div>
         </div>
 
